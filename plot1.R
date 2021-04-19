@@ -1,5 +1,5 @@
 library(dplyr)
-
+#to be able to read extract the data from zip to your working directory
 
 data <- read.table("./household_power_consumption.txt",sep =";",header = TRUE, na.strings = "?",stringsAsFactor = FALSE)
 data$Date <- as.Date(data$Date,format = "%d/%m/%Y")
